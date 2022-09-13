@@ -1,3 +1,56 @@
 .message {
+    display: grid;
+    background-color: slategray;
+    grid-area: M;
+    grid-template-areas:
 
+"A MB";
+
+    grid-template-columns: 80px 300px;
+    grid-gap: 5px;
+    height: 80px;
+    width: 390px;
+    border-radius: 3px;
 }
+
+.messageBody {
+    grid-area: MB;
+    background-color: aliceblue;
+    border-radius: 10px;
+    margin: 2px;
+}
+
+.messageText {
+    grid-area: MT;
+    margin: 2px;
+    font-style: initial;
+}
+
+.name {
+    grid-area: N;
+    margin: 2px;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.time {
+    grid-area: T;
+    margin: 2px;
+    text-align: right;
+    font-style: oblique;
+}
+
+.avatar {
+    grid-area: A;
+    text-align: center;
+}
+
+.avatar img {
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 4em
+}
+
+
