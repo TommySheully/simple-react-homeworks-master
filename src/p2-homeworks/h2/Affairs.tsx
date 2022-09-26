@@ -1,6 +1,7 @@
 import React from 'react'
 import Affair from './Affair'
 import {AffairType, FilterType} from './HW2'
+import s from './HW2.module.css'
 
 type AffairsPropsType = { // need to fix any
     data: Array<AffairType>,
@@ -31,7 +32,7 @@ function Affairs(props: AffairsPropsType) {
     }
 
     return (
-        <div>
+        <div className={s.Affairs}>
 
             {mappedAffairs}
 
